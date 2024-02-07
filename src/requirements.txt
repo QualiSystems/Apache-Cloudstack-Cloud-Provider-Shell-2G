@@ -1,1 +1,3 @@
-cloudshell-cp-cloudstack
+cloudshell-shell-core~=6.0
+cloudshell-cp-core~=2.5
+cloudshell-cp-cloudstack~=1.0
