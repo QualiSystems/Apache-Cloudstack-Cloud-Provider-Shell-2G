@@ -211,10 +211,30 @@ __To allow connecting to an existing VLAN network:__
    1. __Configuration__
    2. __Setting__
 4. Save
-5. Open __Resource Families > Virtual Networks__ and add the attribute to the appropriate service model (__VLAN Auto / VLAN Manual__).
+5. Open the __Resource Families__ explorer and expand the __Virtual Network__ family.
+6. Click the appropriate service model (__VLAN Auto / VLAN Manual__).
+7. From the model's __Attributes__ tab, select __Add/Remove From Bank__ find __Subnet CIDR__ on the left pane and press '>' sign to attach attibute to the __Vlan Service__.
 6. To allow the user to set the subnet CIDR, in the service model, select the attribute, click __Edit Rules__, and make sure __User input__ is selected.
 7. Save your changes in the __Resource Families__ explorer.
 
+## Specify Network Isolation for Cloudstack VLAN service
+This capability requires editing the VLAN Auto / VLAN Manual service models in the Resource Manager Client.
+
+__To allow connecting to an existing VLAN network:__
+1. In Resource Manager Client, open the __Attributes__ explorer.
+2. Add a new attribute with the following settings:
+   * Name: Network Isolation
+   * Attribute Type: String
+   * Value: Possible values are: L2, Isolated, Shared
+3. Press __Rules__ button and check:
+   1. __Configuration__
+   2. __Setting__
+4. Save
+5. Open the __Resource Families__ explorer and expand the __Virtual Network__ family.
+6. Click the appropriate service model (__VLAN Auto / VLAN Manual__).
+7. From the model's __Attributes__ tab, select __Add/Remove From Bank__ find __Network Isolation__ on the left pane and press '>' sign to attach attibute to the __Vlan Service__.
+6. To allow the user to set the network isolation, in the service model, select the attribute, click __Edit Rules__, and make sure __User input__ is selected.
+7. Save your changes in the __Resource Families__ explorer.
 
 # References
 To download and share integrations, see [Quali Community's Integrations](https://community.quali.com/integrations). 
